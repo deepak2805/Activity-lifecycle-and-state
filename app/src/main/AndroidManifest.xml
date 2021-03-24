@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.twoactivitylifecyclecodingchallenge">
+    package="com.example.twoactivitieslifecycle">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/shopping_list"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TwoActivityLifeCycleCodingChallenge">
-        <activity android:name=".Items"
-            android:label="@string/available_items"
-            android:parentActivityName=".MainActivity"
-            >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.twoactivitylifecyclecodingchallenge.MainActivity"
-                />
-        </activity>
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.TwoActivities">
+        <activity android:name="com.example.twoactivitieslifecycle.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,5 +17,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
